@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package invokerMessage;
+
+message JobRequest {
+   int32 id = 1;
+   string functionName = 2;
+   repeated string variables = 3;
+   bytes files = 4;
+}
+
+message JobResponse {
+   int32 id = 1;
+   string functionName = 2;
+   repeated string results = 3;
+   bytes files = 4;
+   bool cacheHit = 5;
+}
