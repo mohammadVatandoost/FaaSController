@@ -1,13 +1,12 @@
 package kafka
 
 import (
-	"behnama/stream/services/messaging/common"
 	"context"
-	"sync"
-	"time"
-
+	"controller/internal/messaging/common"
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/fanap-infra/log"
+	"sync"
+	"time"
 )
 
 type Service struct {

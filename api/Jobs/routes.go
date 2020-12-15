@@ -7,7 +7,7 @@ import (
 )
 
 // Routes ...
-func (jobCon *Controller) Routes(group *gin.RouterGroup, messagingService *messaging.Service) {
+func (jobCon *Controller) Routes(group *gin.RouterGroup, messagingService messaging.Service) {
     jobCon.Messaging = messagingService
-	group.POST("/job", recordCon.jobHandler)
+	group.POST("/job", jobCon.jobHandler)
 }

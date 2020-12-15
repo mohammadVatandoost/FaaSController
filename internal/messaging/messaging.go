@@ -1,9 +1,10 @@
 package messaging
 
 import (
-	"behnama/stream/services/messaging/common"
-	"behnama/stream/services/messaging/kafka"
+
 	"context"
+	"controller/internal/messaging/common"
+	"controller/internal/messaging/kafka"
 	"github.com/fanap-infra/log"
 )
 
